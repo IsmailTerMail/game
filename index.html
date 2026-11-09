@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#080c16" />
-    <meta name="description" content="Sebuah semesta kecil, dibuat dengan penuh sayang oleh Zaza untuk Ika." />
-    <title>A Little Universe for Ika — by Zaza</title>
+    <meta name="description" content="Ika's Little Universe — kumpulan kata dan harapan kecil dari Zaza untuk Ika." />
+    <title>Ika's Little Universe — By Zaza for Ika</title>
     <script>document.documentElement.className = 'js';</script>
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
@@ -13,229 +13,355 @@
   <body>
     <a class="skip-link" href="#main">Lewati ke isi</a>
 
-    <div class="loading-screen" id="loading-screen" role="status" aria-live="polite" aria-label="Memuat semesta kecil untuk Ika">
-      <div class="loader-stars" aria-hidden="true"></div>
-      <div class="loader-moon" aria-hidden="true"><span></span></div>
-      <div class="loader-orbit loader-orbit--one" aria-hidden="true"></div>
-      <div class="loader-orbit loader-orbit--two" aria-hidden="true"></div>
-      <div class="loader-center">
-        <div class="loader-garden" aria-hidden="true">
-          <svg class="loader-flower loader-flower--tulip" viewBox="0 0 74 116">
-            <path d="M37 112c1-27-3-46 1-66" fill="none" stroke="#82a67b" stroke-width="3" stroke-linecap="round"/>
-            <path d="M38 86c-14-16-20-15-22-15 2 12 11 20 23 21m-1 7c13-14 19-13 22-13-2 11-10 18-22 20" fill="#53765e" stroke="#9eb697" stroke-width="1.5"/>
-            <path d="M23 44c-3-12 0-25 8-32 2 9 5 12 7 13 1-10 7-19 14-22-1 14 3 22 1 34-2 11-8 17-16 17s-12-3-14-10Z" fill="#c98d9c" stroke="#edc1c8" stroke-width="2" stroke-linejoin="round"/>
-            <path d="M25 38c7 5 19 6 29 0" fill="none" stroke="#efbdc7" stroke-width="2" stroke-linecap="round"/>
-          </svg>
-          <svg class="loader-cat" viewBox="0 0 118 112">
-            <path d="M25 39 18 8l27 18q14-4 29 0L101 8l-8 35c9 9 13 23 11 37-2 20-18 29-47 29S13 100 12 80c-1-15 3-30 13-41Z" fill="#080b12" stroke="#29344e" stroke-width="3" stroke-linejoin="round"/>
-            <path d="M29 55c4-4 9-4 13 0m34 0c4-4 9-4 13 0" fill="none" stroke="#a9c5e8" stroke-width="3" stroke-linecap="round" class="cat-eyes"/>
-            <path d="M55 67q4-4 8 0l-4 4Z" fill="#c98d9c"/>
-            <path d="M59 71q-5 7-11 2m11-2q5 7 11 2" fill="none" stroke="#c8cede" stroke-width="2" stroke-linecap="round"/>
-            <path d="M35 88q24 12 48 0" fill="none" stroke="#202b43" stroke-width="4" stroke-linecap="round"/>
-            <path d="M25 69 5 65m21 11L7 80m86-11 20-4M93 76l20 4" fill="none" stroke="#8490a9" stroke-width="1.4" stroke-linecap="round"/>
-          </svg>
-          <svg class="loader-flower loader-flower--rose" viewBox="0 0 82 108">
-            <path d="M40 105c1-27 1-43 1-58" fill="none" stroke="#668d70" stroke-width="3" stroke-linecap="round"/>
-            <path d="M42 82c-14-15-19-13-23-13 3 11 11 17 23 19m0-5c12-13 18-12 22-12-3 11-10 17-22 18" fill="#53765e" stroke="#9eb697" stroke-width="1.5"/>
-            <path d="M42 13c7-11 21-8 22 2 11-2 17 12 8 19 8 8 1 21-10 18-5 11-20 9-22-2-11 4-20-7-14-17-8-9 0-23 12-20 0-1 2-1 4 0Z" fill="#a85e78" stroke="#edb2c1" stroke-width="2"/>
-            <path d="M35 28q7-8 15-2t-1 12q-8 7-14-1" fill="none" stroke="#f0c6cf" stroke-width="2" stroke-linecap="round"/>
-          </svg>
-        </div>
-        <p class="loader-kicker">ZAZA HAS A LITTLE SURPRISE</p>
-        <h1 class="loader-title">Preparing a little<br /><em>world for you...</em></h1>
-        <p class="loader-subtitle">Made with love, just for Ika <span aria-hidden="true">♡</span></p>
-        <div class="loader-progress-wrap">
-          <div class="loader-progress-copy"><span>gathering little stars</span><span id="progress-number">0%</span></div>
-          <div class="loader-progress-track" role="progressbar" aria-label="Memuat halaman" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="progress-track"><span id="progress-fill"></span></div>
-        </div>
-        <span class="loader-footnote">made under the same moon, by Zaza</span>
+    <svg class="art-library" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <symbol id="cat-sit" viewBox="0 0 150 150">
+          <ellipse cx="77" cy="137" rx="42" ry="7" fill="#030712" opacity=".5"/>
+          <path class="kitty-tail" d="M106 112c30 9 34 31 20 35-8 2-13-6-7-11 5-4 12 0 9 6" fill="none" stroke="#080d18" stroke-width="10" stroke-linecap="round"/>
+          <path d="M104 61 136 34l-5 44c8 12 11 26 8 37-4 15-19 19-49 19H60c-28 0-43-7-44-24-1-13 4-28 14-39L24 29l32 31c15-5 32-5 48 1Z" fill="#080d18" stroke="#8398b5" stroke-width="2.5" stroke-linejoin="round"/>
+          <path d="m31 42 19 18-20 8Zm92 1-20 18 20 8Z" fill="#293955"/>
+          <path d="M43 94c-8 2-12 8-13 16m78-16c8 2 12 8 13 16" fill="none" stroke="#253650" stroke-width="5" stroke-linecap="round"/>
+          <path class="kitty-eyes" d="M46 82c5-6 11-6 16 0m25 0c5-6 11-6 16 0" fill="none" stroke="#dfeafa" stroke-width="3.5" stroke-linecap="round"/>
+          <path d="m71 91 6-4 6 4-6 5Z" fill="#d28fa5"/><path d="M77 96c-3 6-8 7-12 3m12-3c3 6 8 7 12 3" fill="none" stroke="#c8d5e8" stroke-width="2" stroke-linecap="round"/>
+          <path d="m57 95-30-4m30 11-31 3m71-10 30-4m-30 11 31 3" fill="none" stroke="#9cabc1" stroke-width="1.5" stroke-linecap="round"/><path d="M59 117q18 8 36 0" fill="none" stroke="#293955" stroke-width="4" stroke-linecap="round"/>
+        </symbol>
+        <symbol id="cat-walk" viewBox="0 0 170 112">
+          <ellipse cx="79" cy="102" rx="52" ry="5" fill="#030712" opacity=".34"/><path class="kitty-tail" d="M35 70C9 64 8 41 22 37c9-3 14 5 9 11-4 5-11 3-10-2" fill="none" stroke="#080d18" stroke-width="9" stroke-linecap="round"/>
+          <path d="M43 62c22-21 60-21 83-7l13 25c-20 13-74 16-102 1Z" fill="#080d18" stroke="#8398b5" stroke-width="2.3" stroke-linejoin="round"/><path d="m112 56 6-29 20 20c12 7 17 18 15 30-2 9-10 13-25 12l-15-13Z" fill="#080d18" stroke="#8398b5" stroke-width="2.3" stroke-linejoin="round"/><path d="m120 34 3 17 13-3Zm23 15-13 2 12 10Z" fill="#293955"/>
+          <path class="kitty-leg kitty-leg--back" d="m53 78-5 18m18-15-1 17" fill="none" stroke="#080d18" stroke-width="8" stroke-linecap="round"/><path class="kitty-leg kitty-leg--front" d="m108 78 5 18m17-18 2 17" fill="none" stroke="#080d18" stroke-width="8" stroke-linecap="round"/>
+          <path d="M126 60q5-4 10 0" fill="none" stroke="#dfeafa" stroke-width="2.5" stroke-linecap="round"/><path d="m151 70 7 3-7 3Z" fill="#d28fa5"/><path d="m146 75 16 2m-16 2 15 5" fill="none" stroke="#aab8cc" stroke-width="1.2" stroke-linecap="round"/>
+        </symbol>
+        <symbol id="cat-sleep" viewBox="0 0 170 105">
+          <ellipse cx="83" cy="93" rx="64" ry="6" fill="#030712" opacity=".4"/><path d="M34 72c-19 16-5 31 12 20 8-5 6-15 0-18" fill="none" stroke="#080d18" stroke-width="10" stroke-linecap="round"/>
+          <path d="M34 71c11-30 58-39 91-22 21 11 21 29 2 39-28 15-82 11-93-2Z" fill="#080d18" stroke="#8398b5" stroke-width="2.3"/><path d="M111 59c-4-22 8-37 26-35l23 20c5 12 0 26-12 31-13 7-30-1-37-16Z" fill="#080d18" stroke="#8398b5" stroke-width="2.3" stroke-linejoin="round"/><path d="m119 31 4 22 14-5Zm23 0-6 19 16 2Z" fill="#293955"/><path d="M126 58q7 7 14 0m6 1q6 5 11 0" fill="none" stroke="#dfeafa" stroke-width="2.5" stroke-linecap="round"/><path d="m147 68 5 3-5 3Z" fill="#d28fa5"/><path d="M91 83q14-7 25 0" fill="none" stroke="#2a3851" stroke-width="4" stroke-linecap="round"/>
+        </symbol>
+        <symbol id="cat-play" viewBox="0 0 155 130">
+          <ellipse cx="75" cy="117" rx="52" ry="5" fill="#030712" opacity=".4"/><path class="kitty-tail" d="M43 78c-25-12-24-34-9-36 10-1 13 8 7 13-4 3-10 1-9-4" fill="none" stroke="#080d18" stroke-width="9" stroke-linecap="round"/>
+          <path d="M42 72c18-17 46-18 65-9l18 18c-9 17-37 24-67 18-15-3-22-16-16-27Z" fill="#080d18" stroke="#8398b5" stroke-width="2.3"/><path d="m92 68 10-30 19 20c14 4 20 15 17 28-3 11-14 14-28 9Z" fill="#080d18" stroke="#8398b5" stroke-width="2.3" stroke-linejoin="round"/><path d="m105 43 4 18 12-5Zm24 17-13 2 13 8Z" fill="#293955"/><path d="M113 70q5-5 10 0m-27 28-2 12m21-11 5 10" fill="none" stroke="#080d18" stroke-width="8" stroke-linecap="round"/><path d="m119 79 5 3-5 3Z" fill="#d28fa5"/><path d="M104 73q5-4 10 0" fill="none" stroke="#dfeafa" stroke-width="2.5" stroke-linecap="round"/>
+        </symbol>
+        <symbol id="tulip" viewBox="0 0 82 145">
+          <path d="M41 141c1-31-3-54 1-78" fill="none" stroke="#78977f" stroke-width="3.2" stroke-linecap="round"/><path d="M42 111c-16-19-25-18-31-16 5 16 16 24 32 26m0-13c17-18 25-17 31-16-4 16-14 24-31 28" fill="#385947" stroke="#88a78e" stroke-width="1.5" stroke-linejoin="round"/><path class="flower-petals" d="M24 55c-5-16 1-31 11-42 3 13 6 20 9 22 3-15 11-27 21-31-2 18 3 29 0 43-3 16-12 24-23 23-10-1-16-5-18-15Z" fill="#b87991" stroke="#e5b4c2" stroke-width="2" stroke-linejoin="round"/><path d="M27 47c9 6 23 7 37 0" fill="none" stroke="#f0c9d1" stroke-width="2" stroke-linecap="round"/>
+        </symbol>
+        <symbol id="rose" viewBox="0 0 92 135">
+          <path d="M45 132c2-32 1-53 1-75" fill="none" stroke="#78977f" stroke-width="3.2" stroke-linecap="round"/><path d="M46 107c-17-18-25-16-31-14 5 15 15 23 32 24m0-14c16-17 24-16 30-15-4 15-14 22-31 25" fill="#385947" stroke="#88a78e" stroke-width="1.5" stroke-linejoin="round"/><g class="flower-petals" stroke="#e6b1c0" stroke-width="1.7"><path d="M43 20c-4-17 16-22 23-9 13-9 26 5 18 17 13 9 4 27-10 25-7 15-25 11-28-2-16 5-25-11-16-22-5-7 2-17 13-16Z" fill="#a65f79"/><path d="M42 28c5-10 20-12 25-3 8-4 16 4 11 11 5 8-4 15-11 10-7 8-18 4-18-3-8 2-14-6-9-12Z" fill="#c18095"/><path d="M53 31c3-5 10-5 12 0 4 5-1 11-6 12-7-2-10-7-6-12Z" fill="#e0a9b9"/></g>
+        </symbol>
+      </defs>
+    </svg>
+
+    <div class="loading-screen" id="loading-screen" role="status" aria-live="polite" aria-label="Memuat Ika's Little Universe">
+      <div class="loading-stars" aria-hidden="true"></div><span class="loading-moon" aria-hidden="true"></span>
+      <span class="loading-cloud loading-cloud--one" aria-hidden="true"></span><span class="loading-cloud loading-cloud--two" aria-hidden="true"></span><span class="loading-galaxy" aria-hidden="true"></span>
+      <span class="loading-star loading-star--one" aria-hidden="true">✧</span><span class="loading-star loading-star--two" aria-hidden="true">✦</span><span class="loading-star loading-star--three" aria-hidden="true">·</span>
+      <svg class="loading-flower loading-flower--tulip" viewBox="0 0 82 145" aria-hidden="true"><use href="#tulip"/></svg>
+      <svg class="loading-flower loading-flower--rose" viewBox="0 0 92 135" aria-hidden="true"><use href="#rose"/></svg>
+      <span class="loading-orbit" aria-hidden="true"></span>
+      <div class="loading-cat"><svg class="kitty kitty--sit" viewBox="0 0 150 150" aria-label="Kucing kecil duduk di bawah bintang"><use href="#cat-sit"/></svg><span class="cat-yarn" aria-hidden="true"></span></div>
+      <div class="loading-copy">
+        <p class="loading-kicker">A LITTLE UNIVERSE, MADE JUST FOR YOU</p>
+        <h1 class="loading-title">A little world<br /><em>for Ika.</em></h1>
+        <p class="loading-byline">Made with love, just for Ika <span>♡</span></p>
+        <div class="loading-messages" aria-live="polite"><p class="loading-message loading-message--one">Preparing a little world for you...</p><p class="loading-message loading-message--two">Gathering little stars and flowers...</p><p class="loading-message loading-message--three">Your little universe is ready.</p></div>
       </div>
-      <span class="loader-spark loader-spark--a" aria-hidden="true">✦</span>
-      <span class="loader-spark loader-spark--b" aria-hidden="true">✧</span>
-      <span class="loader-spark loader-spark--c" aria-hidden="true">·</span>
-      <span class="loader-spark loader-spark--d" aria-hidden="true">✦</span>
+      <div class="loading-content">
+        <div class="loading-progress-copy"><span id="progress-label">preparing your little world</span><span id="progress-number">0%</span></div>
+        <div class="loading-track" id="progress-track" role="progressbar" aria-label="Progres animasi pembukaan" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span id="progress-fill"></span></div>
+      </div>
+      <span class="journey-clock" id="journey-clock" aria-hidden="true"></span>
     </div>
 
+    <section class="welcome-screen" id="welcome-screen" aria-labelledby="welcome-title" aria-hidden="true" inert>
+      <div class="welcome-stars" aria-hidden="true"></div>
+      <span class="welcome-moon" aria-hidden="true"></span>
+      <span class="welcome-cloud welcome-cloud--one" aria-hidden="true"></span><span class="welcome-cloud welcome-cloud--two" aria-hidden="true"></span>
+      <span class="welcome-petal welcome-petal--one" aria-hidden="true"></span><span class="welcome-petal welcome-petal--two" aria-hidden="true"></span><span class="welcome-petal welcome-petal--three" aria-hidden="true"></span>
+      <button class="language-toggle language-toggle--welcome" data-language-toggle type="button" aria-pressed="false" aria-label="Terjemahkan teks bahasa Inggris ke Bahasa Indonesia"><span class="language-toggle-code">ID</span><span class="language-toggle-label">Terjemahkan</span></button>
+      <div class="welcome-scene">
+        <svg class="welcome-flower welcome-flower--tulip" viewBox="0 0 82 145" aria-hidden="true"><use href="#tulip"/></svg>
+        <svg class="welcome-flower welcome-flower--rose" viewBox="0 0 92 135" aria-hidden="true"><use href="#rose"/></svg>
+        <button class="welcome-cat" id="welcome-cat" type="button" aria-label="Sapa kucing kecil yang menyambut Ika"><svg viewBox="0 0 150 150" aria-hidden="true"><use href="#cat-sit"/></svg></button>
+        <span class="welcome-yarn" aria-hidden="true"></span>
+        <span class="welcome-cat-response" id="welcome-cat-response" aria-live="polite"></span>
+      </div>
+      <div class="welcome-content">
+        <p class="welcome-kicker">A LITTLE WORLD, MADE WITH LOVE</p>
+        <p class="welcome-overline">A LITTLE UNIVERSE, MADE FOR YOU</p>
+        <h1 id="welcome-title">Welcome to Your<br /><em>Little Universe, Ika.</em></h1>
+        <p class="welcome-lead">Somewhere among the stars, flowers, and little dreams, I made a place just for you.</p>
+        <div class="welcome-columns">
+          <div class="welcome-copy welcome-copy--first">
+            <p class="welcome-dear">Dear, Ika.</p>
+            <p>Somewhere in this universe, there is someone who makes everything feel a little more beautiful. And this little universe was made just for you.</p>
+            <p>Welcome to your little world, Ika. Take your time, there's no need to rush. I hope you find a little warmth in every word waiting here.</p>
+          </div>
+          <div class="welcome-copy welcome-copy--second">
+            <p class="welcome-dear">Hai, Ika.</p>
+            <p>Aku membuat tempat kecil ini khusus untuk kamu. Mungkin tidak ada sesuatu yang benar-benar mewah di dalamnya, tetapi ada banyak kata, cerita, dan hal-hal kecil yang ingin aku sampaikan.</p>
+            <p>Di sini ada sedikit langit, beberapa bintang, bunga-bunga, dan seekor kucing kecil yang siap menemanimu menjelajahi dunia ini.</p>
+            <p>Take your time, little one. This world is yours.</p>
+          </div>
+        </div>
+        <button class="enter-button" id="enter-universe" type="button"><span>Enter My Little Universe</span><span aria-hidden="true">♡</span></button>
+        <p class="welcome-signature">Created with love, Zaza <span>♡</span></p>
+      </div>
+    </section>
+
     <div class="site-shell" id="site-shell">
-      <div class="ambient ambient--left" aria-hidden="true"></div>
-      <div class="ambient ambient--right" aria-hidden="true"></div>
       <header class="site-header">
-        <a href="#home" class="brand" aria-label="Zaza untuk Ika, kembali ke atas">
-          <span class="brand-mark">z<span>♡</span>i</span>
-          <span class="brand-name">a little universe</span>
-        </a>
-        <nav class="main-nav" aria-label="Navigasi utama">
-          <a href="#little-things">little things</a>
-          <a href="#constellation">our stars</a>
-          <a href="#letter">the letter</a>
+        <a class="brand" href="#home" aria-label="Ika's Little Universe, kembali ke atas"><span class="brand-name">Ika's Little Universe</span><span class="brand-byline">by Zaza <i>♡</i></span></a>
+        <nav class="quick-nav" aria-label="Navigasi cepat">
+          <a href="#home">Our Beginning</a>
+          <a href="#letter">My Letter</a>
+          <a href="#open-when">Open When</a>
+          <a href="#stars">The Stars</a>
+          <a href="#final-letter">Final Letter</a>
         </nav>
-        <a class="header-note" href="#letter"><span class="header-note-dot"></span> untuk Ika, dari Zaza</a>
+        <button class="language-toggle language-toggle--header" data-language-toggle type="button" aria-pressed="false" aria-label="Terjemahkan teks bahasa Inggris ke Bahasa Indonesia"><span class="language-toggle-code">ID</span><span class="language-toggle-label">Terjemahkan</span></button>
+        <details class="contents-menu">
+          <summary><span>Daftar bagian</span><span class="contents-chevron" aria-hidden="true">⌄</span></summary>
+          <nav aria-label="Semua bagian website">
+            <a href="#home">01 · Our Little Beginning</a>
+            <a href="#letter">02 · A Letter for Ika</a>
+            <a href="#things">03 · Things I Love About You</a>
+            <a href="#open-when">04 · Open When...</a>
+            <a href="#words">05 · A Few Words for You</a>
+            <a href="#stories">06 · Little Stories</a>
+            <a href="#stars">07 · Somewhere Between the Stars</a>
+            <a href="#remember">08 · Please Remember</a>
+            <a href="#wishes">09 · Wishes for You</a>
+            <a href="#promises">10 · My Promises</a>
+            <a href="#cats">11 · A Little Note from the Cats</a>
+            <a href="#final-letter">12 · Until the Next Page</a>
+          </nav>
+        </details>
       </header>
 
       <main id="main">
-        <section class="hero section-wrap" id="home" aria-labelledby="hero-title">
-          <div class="hero-copy">
-            <p class="eyebrow"><span class="eyebrow-star">✳</span> A LITTLE UNIVERSE <span class="eyebrow-rule"></span> FOR IKA</p>
-            <h1 id="hero-title">Namamu membuat<br />malam terasa <em>lebih lembut.</em></h1>
-            <p class="hero-deck">Sebuah sudut kecil di antara bintang-bintang, untuk mengingatkanmu betapa berharganya kamu—hari ini, dan hari-hari setelahnya.</p>
-            <div class="hero-actions">
-              <a class="button button-primary" href="#letter"><span>Buka surat kecilku</span><span class="button-arrow" aria-hidden="true">↗</span></a>
-              <a class="text-link" href="#constellation">Temui rasi kecil kita <span aria-hidden="true">↓</span></a>
+        <section class="chapter home-chapter section-wrap reveal" id="home" aria-labelledby="home-title">
+          <div class="chapter-meta"><span>01</span><span class="meta-line"></span><span>OUR LITTLE BEGINNING</span></div>
+          <div class="home-skyline" aria-hidden="true"><span class="skyline-moon"></span><span class="skyline-cloud skyline-cloud--a"></span><span class="skyline-cloud skyline-cloud--b"></span><svg class="home-walker" viewBox="0 0 170 112"><use href="#cat-walk"/></svg><svg class="skyline-tulip"><use href="#tulip"/></svg><span class="skyline-stars">✧　·　✦</span></div>
+          <div class="home-layout">
+            <div class="home-heading">
+              <p class="eyebrow">A SMALL PLACE FOR YOUR WORDS</p>
+              <h1 id="home-title">Our Little<br /><em>Beginning</em></h1>
+              <p class="home-greeting">Hai, Ika.</p>
+              <p class="home-tagline">Somewhere in this universe, I made a little world just for you.</p>
             </div>
-            <div class="hero-signoff"><span class="signoff-line"></span><span>made with love, <strong>Zaza</strong></span><span class="signoff-heart">♡</span></div>
-          </div>
-          <div class="hero-art-wrap">
-            <div class="art-caption art-caption--top"><span>NO. 01</span><span>THE NIGHT GARDEN</span></div>
-            <div class="hero-art-frame">
-              <div class="art-halo"></div>
-              <svg class="hero-art" viewBox="0 0 520 560" role="img" aria-label="Ilustrasi bulan sabit, taman bunga, dan seekor kucing hitam di malam hari">
-                <defs>
-                  <linearGradient id="sky" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#223b63"/><stop offset=".52" stop-color="#111d35"/><stop offset="1" stop-color="#0c1325"/></linearGradient>
-                  <radialGradient id="glow"><stop stop-color="#a9c5e8" stop-opacity=".25"/><stop offset="1" stop-color="#a9c5e8" stop-opacity="0"/></radialGradient>
-                  <linearGradient id="hill" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#243f68"/><stop offset="1" stop-color="#142541"/></linearGradient>
-                  <linearGradient id="flower" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#dca5b0"/><stop offset="1" stop-color="#a45e78"/></linearGradient>
-                </defs>
-                <rect x="18" y="18" width="484" height="524" rx="240" fill="url(#sky)"/>
-                <circle cx="363" cy="173" r="123" fill="url(#glow)"/>
-                <circle cx="363" cy="173" r="54" fill="#f1f4fa" opacity=".95"/>
-                <circle cx="388" cy="150" r="52" fill="#172b4d"/>
-                <g fill="#f1f4fa">
-                  <path d="m124 146 4 11 11 4-11 4-4 11-4-11-11-4 11-4Z"/><path d="m273 96 3 8 8 3-8 3-3 8-3-8-8-3 8-3Z"/>
-                  <path d="m430 258 3 8 8 3-8 3-3 8-3-8-8-3 8-3Z"/><circle cx="172" cy="212" r="2"/><circle cx="304" cy="239" r="2.5"/><circle cx="423" cy="113" r="2"/><circle cx="213" cy="109" r="1.5"/>
-                </g>
-                <g fill="none" stroke="#8ea9d4" stroke-opacity=".62" stroke-width="1.2"><path d="m127 158 47 55 51-25 48 50"/><path d="m271 101 33 35 57-12"/></g>
-                <g fill="#d8e4f4"><circle cx="127" cy="158" r="3"/><circle cx="174" cy="213" r="3"/><circle cx="225" cy="188" r="3"/><circle cx="273" cy="238" r="3"/></g>
-                <path d="M20 376c73-63 147-33 216-5 98 40 170 16 266-30v201H20Z" fill="#101c33"/>
-                <path d="M20 422c81-63 159-38 238-14 80 24 166 11 244-33v167H20Z" fill="url(#hill)"/>
-                <path d="M18 467c77-38 167-35 239-4 83 35 170 30 245-12v91H18Z" fill="#0a1121"/>
-                <g fill="none" stroke="#759277" stroke-width="3" stroke-linecap="round">
-                  <path d="M89 500c13-87 7-128-10-164m8 90c-30-22-42-22-52-19m57-9c24-23 37-24 49-23"/>
-                  <path d="M432 520c-4-71 3-115 24-158m-19 101c-25-18-36-17-46-13m57-24c20-22 33-25 42-25"/>
-                  <path d="M171 516c4-53 2-84-14-113m13 72c18-17 29-18 38-17m-41-7c-16-16-26-18-33-18"/>
-                </g>
-                <g fill="#55785f" stroke="#9bb49a" stroke-width="1.4">
-                  <path d="M86 429q-28-26-48-22 4 26 49 32m9-24q24-26 43-22-5 27-45 34"/><path d="M451 444q-29-20-44-14 9 22 43 25m9-31q17-29 34-29-1 27-36 40"/>
-                  <path d="M156 455q-24-22-39-18 5 23 40 28m6-24q18-23 33-22-3 25-37 32"/>
-                </g>
-                <g fill="url(#flower)" stroke="#e5b9c2" stroke-width="1.5">
-                  <path d="M72 341c-4-16 2-25 10-32 4 12 8 15 11 16 2-12 9-20 17-23-2 15 2 22 0 34-2 12-10 18-20 17-9-1-15-4-18-12Z"/>
-                  <path d="M432 344c-2-13 3-21 10-26 3 9 6 12 9 13 1-10 7-17 13-20-1 13 3 19 1 29-2 10-8 15-16 14-9 0-14-3-17-10Z"/>
-                  <path d="M153 382c-4-12 0-19 6-24 3 9 6 11 9 12 1-9 7-15 13-18-1 11 3 16 1 25-2 8-7 12-14 12-8 0-13-2-15-7Z"/>
-                </g>
-                <g transform="translate(235 381)">
-                  <path d="M25 58 17 23 46 42q15-4 28 0l29-19-8 37c9 9 12 22 10 35-2 18-18 26-48 26S11 113 10 95c-1-15 4-28 15-37Z" fill="#070a11" stroke="#43506a" stroke-width="3" stroke-linejoin="round"/>
-                  <path d="M32 75q6-6 12 0m31 0q6-6 12 0" fill="none" stroke="#dce7f4" stroke-width="3" stroke-linecap="round"/>
-                  <path d="M57 88q4-4 8 0l-4 4Z" fill="#c98d9c"/><path d="M61 92q-5 6-10 2m10-2q5 6 10 2" fill="none" stroke="#ccd5e5" stroke-width="2" stroke-linecap="round"/>
-                  <path d="m34 92-25-4m26 12-26 5m80-13 25-4m-26 12 26 5" fill="none" stroke="#8d99ae" stroke-width="1.2" stroke-linecap="round"/>
-                </g>
-                <path d="M260 502c-17-12-23-23-13-30 6-4 12-1 15 4 4-7 13-7 17-1 6 9-4 19-19 27Z" fill="#c98d9c"/>
-                <circle cx="67" cy="229" r="3" fill="#c98d9c"/><circle cx="452" cy="207" r="2.5" fill="#a9c5e8"/>
-              </svg>
-              <span class="art-stamp art-stamp--one">♡</span>
-              <span class="art-stamp art-stamp--two">for my favorite person</span>
+            <div class="reading-paper">
+              <p>Aku membuat tempat kecil ini karena terkadang ada banyak hal yang ingin aku sampaikan, tetapi tidak semuanya mudah untuk diucapkan secara langsung. Jadi, aku mencoba menyusunnya menjadi kata-kata, satu per satu, supaya kamu bisa membacanya kapan pun kamu mau.</p>
+              <p>Website ini mungkin hanya kumpulan tulisan sederhana. Tidak ada sesuatu yang benar-benar mewah di dalamnya. Tapi setiap bagian dibuat dengan satu tujuan: mengingatkan kamu bahwa keberadaanmu berarti.</p>
+              <p>Aku ingin tempat ini terasa seperti ruang kecil untuk beristirahat. Saat harimu menyenangkan, semoga kamu bisa tersenyum ketika membacanya. Saat harimu terasa berat, semoga ada satu atau dua kalimat yang bisa membuatmu merasa sedikit lebih baik.</p>
+              <p>Tidak perlu membacanya sekaligus. Nikmati saja pelan-pelan, seperti melihat langit yang berubah warna menjelang malam.</p>
+              <p class="paper-closing">This little universe is yours, Ika. And I hope it makes you feel loved, appreciated, and remembered.</p>
+              <span class="paper-signature">— Zaza <i>♡</i></span>
             </div>
-            <div class="art-caption art-caption--bottom"><span>JAKARTA · UNDER THE SAME MOON</span><span>♡</span></div>
           </div>
-          <a class="scroll-cue" href="#little-things"><span class="scroll-cue-line"></span><span>scroll to wander</span><span>↓</span></a>
+          <a class="next-chapter" href="#letter"><span>TURN THE PAGE</span><span aria-hidden="true">↓</span></a>
         </section>
 
-        <section class="intro-band section-wrap reveal" id="little-things" aria-labelledby="intro-title">
-          <div class="section-index"><span>01</span><span class="index-line"></span><span>THE LITTLE THINGS</span></div>
-          <div class="intro-layout">
-            <div>
-              <p class="eyebrow eyebrow--soft">A NOTE FROM MY HEART</p>
-              <h2 id="intro-title">Ada banyak hal kecil<br />yang membuatmu <em>begitu berarti.</em></h2>
-            </div>
-            <p class="intro-aside">Tidak semuanya perlu jadi kata-kata besar. Beberapa cukup hadir diam-diam, seperti cahaya yang membuat malam terasa lebih ramah.</p>
-          </div>
-          <div class="little-grid">
-            <article class="little-card little-card--rose">
-              <span class="card-no">A / 01</span><span class="little-icon little-icon--moon" aria-hidden="true">☾</span>
-              <h3>Caramu hadir</h3><p>Kehadiranmu punya cara sendiri untuk membuat hari biasa terasa sedikit lebih baik.</p><span class="card-footer">a softer kind of light <span>✳</span></span>
-            </article>
-            <article class="little-card little-card--blue">
-              <span class="card-no">A / 02</span><span class="little-icon little-icon--star" aria-hidden="true">✳</span>
-              <h3>Hal-hal kecil</h3><p>Ada banyak alasan sederhana untuk bersyukur, dan entah bagaimana, kamu sering ada di antaranya.</p><span class="card-footer">the quiet magic <span>✧</span></span>
-            </article>
-            <article class="little-card little-card--cream">
-              <span class="card-no">A / 03</span><span class="little-icon little-icon--flower" aria-hidden="true">❀</span>
-              <h3>Menjadi dirimu</h3><p>Semoga kamu selalu tahu: menjadi Ika saja sudah lebih dari cukup untuk disayangi.</p><span class="card-footer">exactly as you are <span>♡</span></span>
-            </article>
+        <section class="chapter letter-chapter" id="letter" aria-labelledby="letter-title">
+          <div class="section-wrap reveal">
+            <div class="chapter-meta"><span>02</span><span class="meta-line"></span><span>MY LETTER</span></div>
+            <div class="chapter-heading"><p class="eyebrow">A LETTER FOR IKA</p><h2 id="letter-title">A Letter <em>for Ika</em></h2><p class="heading-note">Some things are easier to say, one page at a time.</p></div>
+            <div class="letter-scene" aria-hidden="true"><span class="letter-petal letter-petal--one"></span><span class="letter-petal letter-petal--two"></span><svg class="letter-sleeper" viewBox="0 0 170 105"><use href="#cat-sleep"/></svg><span class="letter-zzz">z<span>z</span></span></div>
+            <details class="letter-envelope letter-envelope--first">
+              <summary class="envelope-cover">
+                <span class="envelope-label">A LETTER, SEALED WITH LOVE</span>
+                <span class="envelope-monogram">z<span>♡</span>i</span>
+                <span class="envelope-recipient">For Ika, whenever you feel like reading.</span>
+                <span class="envelope-action"><span class="envelope-open-label">Touch to open</span><span class="envelope-close-label">Fold the letter</span><span class="envelope-arrow" aria-hidden="true">↓</span></span>
+              </summary>
+              <div class="letter-inside"><article class="long-letter">
+              <p class="letter-salutation">Ika sayang,</p>
+              <p>Ada satu hal yang ingin aku sampaikan sejak lama: aku bersyukur bisa mengenal kamu.</p>
+              <p>Awalnya aku tidak pernah benar-benar membayangkan akan sampai di titik ini. Aku juga tidak menyangka seseorang bisa hadir dengan cara yang sederhana, lalu perlahan menjadi bagian yang begitu berarti dalam hari-hariku. Tapi ternyata, kamu datang dan membuatku mengenal banyak perasaan yang sebelumnya mungkin tidak terlalu kupahami.</p>
+              <p>Aku suka caramu tersenyum. Mungkin buat kamu itu hal biasa, sesuatu yang terjadi begitu saja. Tapi ada saat-saat ketika senyummu bisa membuat hariku terasa lebih ringan. Bahkan ketika aku sedang banyak pikiran, melihat kamu bahagia sering kali sudah cukup untuk membuatku ikut tersenyum.</p>
+              <p>Aku juga menghargai hatimu. Cara kamu memperlakukan orang lain, caramu memahami sesuatu, dan hal-hal kecil yang mungkin tidak selalu kamu sadari. Aku tahu kamu tidak harus selalu menjadi orang yang kuat atau selalu mengerti keadaan semua orang. Kamu juga boleh punya hari yang buruk, boleh merasa lelah, dan boleh membutuhkan waktu untuk dirimu sendiri.</p>
+              <p>Aku ingin mengenal kamu lebih jauh, bukan hanya bagian yang menyenangkan, tetapi juga hari-hari ketika kamu sedang tidak baik-baik saja. Aku ingin belajar mendengarkan tanpa buru-buru menghakimi, memahami tanpa memaksakan, dan memberi ruang ketika kamu membutuhkannya.</p>
+              <p>Kalau suatu hari jarak terasa menyebalkan, semoga kita tetap bisa menjaga komunikasi dan saling percaya. Aku tahu tidak semua hal bisa berjalan sesuai keinginan. Ada kesibukan, keadaan, dan waktu yang kadang tidak bisa kita atur. Tapi aku berharap kita tetap bisa menghargai satu sama lain tanpa membuat siapa pun kehilangan ruang untuk tumbuh.</p>
+              <p>Aku tidak ingin kamu merasa harus selalu membalas semua perhatian dengan cara yang sama. Kamu tidak perlu menjadi sempurna untuk membuatku menghargaimu. Kamu cukup menjadi dirimu sendiri, dengan segala cerita, kebiasaan, kelebihan, dan kekurangan yang kamu punya.</p>
+              <p>Aku ingin kamu tetap mengejar hal-hal yang kamu impikan. Belajar dengan baik, menjaga kesehatan, mencoba banyak hal, dan membangun masa depan yang kamu inginkan. Aku akan senang melihat kamu berkembang menjadi seseorang yang semakin percaya pada dirinya sendiri.</p>
+              <p>Terima kasih sudah hadir dengan caramu sendiri. Terima kasih untuk percakapan sederhana, tawa kecil, cerita random, dan momen-momen yang mungkin terlihat biasa tetapi punya tempat tersendiri dalam ingatanku.</p>
+              <p>Kalau ada satu hal yang ingin aku titipkan, itu adalah jangan pernah menganggap dirimu tidak berharga hanya karena suatu hari kamu merasa kurang. Kamu punya cahaya sendiri, Ika. Tidak harus selalu terang, tidak harus selalu terlihat oleh semua orang. Bahkan bintang pun punya waktunya sendiri untuk bersinar.</p>
+              <p class="letter-english">I hope life treats you gently, and I hope you never forget how much your existence matters.</p>
+              <p class="letter-signoff">With all the affection I may not always know how to put into words,<br /><span>Zaza <i>♡</i></span></p>
+              </article></div>
+            </details>
+            <a class="next-chapter" href="#things"><span>THINGS I LOVE ABOUT YOU</span><span aria-hidden="true">↓</span></a>
           </div>
         </section>
 
-        <section class="constellation-section" id="constellation" aria-labelledby="constellation-title">
-          <div class="section-wrap constellation-inner reveal">
-            <div class="section-index section-index--light"><span>02</span><span class="index-line"></span><span>OUR LITTLE CONSTELLATION</span></div>
-            <div class="constellation-layout">
-              <div class="constellation-copy">
-                <p class="eyebrow eyebrow--soft">TOUCH A STAR, OPEN A NOTE</p>
-                <h2 id="constellation-title">Kalau malam terasa luas,<br />kita tetap punya <em>rasi sendiri.</em></h2>
-                <p class="section-deck">Tiga bintang kecil ini menyimpan hal-hal yang ingin selalu kuingatkan padamu.</p>
-                <div class="star-note" aria-live="polite" aria-atomic="true">
-                  <span class="note-quote-mark" aria-hidden="true">“</span>
-                  <p id="star-note-text">Ika, kamu tidak harus melakukan apa-apa untuk pantas disayangi. Dirimu saja sudah berarti.</p>
-                  <span class="note-from">— Zaza <span>♡</span></span>
-                </div>
-              </div>
-              <div class="star-map" aria-label="Peta rasi dengan tiga bintang yang dapat dipilih">
-                <svg class="star-map-lines" viewBox="0 0 440 400" aria-hidden="true"><path d="M86 272 176 125l176 78-94 123Z"/><path d="m176 125 82 201"/><circle cx="86" cy="272" r="70"/><circle cx="352" cy="203" r="64"/></svg>
-                <button class="star-point star-point--one is-selected" type="button" data-message="Ika, kamu tidak harus melakukan apa-apa untuk pantas disayangi. Dirimu saja sudah berarti." aria-label="Buka pesan: Kamu sudah berarti" aria-pressed="true"><span class="star-point-glow"></span><span class="star-point-core">✦</span><span class="star-label">already enough</span></button>
-                <button class="star-point star-point--two" type="button" data-message="Di antara banyak hal yang bisa berubah, rasa syukurku karena mengenalmu selalu ingin ku jaga." aria-label="Buka pesan: Rasa syukurku" aria-pressed="false"><span class="star-point-glow"></span><span class="star-point-core">✦</span><span class="star-label">my quiet wish</span></button>
-                <button class="star-point star-point--three" type="button" data-message="Kalau suatu hari kamu lupa betapa berharganya dirimu, semoga kata-kata kecil ini membantu mengingatkan." aria-label="Buka pesan: Kamu selalu berharga" aria-pressed="false"><span class="star-point-glow"></span><span class="star-point-core">✦</span><span class="star-label">for every night</span></button>
-                <span class="map-caption map-caption--top">IKA</span><span class="map-caption map-caption--bottom">ZAZA · ALWAYS NEAR</span>
-                <span class="map-dot map-dot--a" aria-hidden="true">✧</span><span class="map-dot map-dot--b" aria-hidden="true">·</span><span class="map-dot map-dot--c" aria-hidden="true">✧</span>
-              </div>
+        <section class="chapter section-wrap reveal" id="things" aria-labelledby="things-title">
+          <div class="chapter-meta"><span>03</span><span class="meta-line"></span><span>THINGS I LOVE ABOUT YOU</span></div>
+          <div class="chapter-heading"><p class="eyebrow">A FEW THINGS, OUT OF SO MANY</p><h2 id="things-title">Things I Love <em>About You</em></h2><p class="heading-note">Mungkin aku tidak selalu pandai menjelaskan apa saja yang membuatmu istimewa. Jadi, ini beberapa hal kecil yang ingin aku tuliskan dan ingat.</p></div>
+          <div class="quality-grid">
+            <article class="quality-card"><span class="quality-number">01</span><h3>Your Smile</h3><p>Senyummu punya cara sendiri untuk membuat suasana terasa lebih hangat. Sesederhana itu, tetapi selalu berhasil meninggalkan kesan baik di pikiranku.</p></article>
+            <article class="quality-card"><span class="quality-number">02</span><h3>Your Kind Heart</h3><p>Aku suka bagaimana kamu bisa peduli dan berusaha memahami orang lain. Semoga kamu juga selalu ingat untuk memberikan kebaikan yang sama kepada dirimu sendiri.</p></article>
+            <article class="quality-card"><span class="quality-number">03</span><h3>Your Little Habits</h3><p>Hal-hal kecil yang kamu lakukan, cara kamu bercerita, kebiasaan random, sampai hal sederhana yang mungkin tidak kamu anggap penting. Semua itu membuatmu terasa semakin menjadi dirimu sendiri.</p></article>
+            <article class="quality-card"><span class="quality-number">04</span><h3>Your Lovely Mind</h3><p>Aku suka mendengar isi pikiranmu, cerita-ceritamu, dan cara kamu melihat sesuatu. Kita tidak harus selalu punya pemikiran yang sama untuk bisa saling memahami.</p></article>
+            <article class="quality-card"><span class="quality-number">05</span><h3>Your Presence</h3><p>Kadang, kehadiran seseorang saja sudah cukup membuat hari terasa berbeda. Terima kasih karena pernah menjadi bagian dari banyak hari yang ingin kuingat.</p></article>
+            <article class="quality-card"><span class="quality-number">06</span><h3>Your Brave Side</h3><p>Aku tahu ada hal-hal yang tidak mudah untuk kamu lewati. Tapi kamu tetap mencoba melangkah. Semoga kamu tidak meremehkan keberanianmu sendiri.</p></article>
+            <article class="quality-card"><span class="quality-number">07</span><h3>Your Soft Side</h3><p>Kamu tidak harus selalu terlihat kuat. Ada sisi lembut dalam dirimu yang juga pantas dijaga, dihargai, dan diberi waktu untuk beristirahat.</p></article>
+            <article class="quality-card quality-card--last"><span class="quality-number">08</span><h3>Simply Being You</h3><p>Dari semua hal yang bisa aku tuliskan, yang paling sederhana adalah ini: aku menghargai kamu karena kamu adalah Ika. <em>You don't have to be anyone else.</em></p></article>
+          </div>
+          <a class="next-chapter" href="#open-when"><span>OPEN WHEN...</span><span aria-hidden="true">↓</span></a>
+        </section>
+
+        <section class="chapter open-when-chapter" id="open-when" aria-labelledby="open-when-title">
+          <div class="section-wrap reveal">
+            <div class="chapter-meta"><span>04</span><span class="meta-line"></span><span>FOR EVERY KIND OF DAY</span></div>
+            <div class="chapter-heading"><p class="eyebrow">OPEN WHEN...</p><h2 id="open-when-title">For the days when<br /><em>you need a little note.</em></h2><p class="heading-note">Untuk hari-hari yang berbeda, ada beberapa pesan kecil yang bisa kamu buka kapan pun kamu membutuhkannya.</p></div>
+            <div class="open-when-scene" aria-hidden="true"><span class="scene-cloud scene-cloud--one"></span><span class="scene-cloud scene-cloud--two"></span><svg viewBox="0 0 150 150"><use href="#cat-sit"/></svg><span class="scene-flower"><svg viewBox="0 0 92 135"><use href="#rose"/></svg></span></div>
+            <div class="open-list">
+              <details class="open-card"><summary><span class="open-number">01</span><span class="open-title">Open When You Feel Sad</span><span class="open-plus" aria-hidden="true">+</span></summary><div class="open-note"><p>Ika, kalau hari ini terasa berat, tidak apa-apa untuk berhenti sebentar. Kamu tidak harus memaksakan diri terlihat baik-baik saja. Menangis bukan berarti kamu lemah, dan merasa sedih bukan berarti kamu gagal. Ambil waktu untuk bernapas, istirahat, dan pelan-pelan kembali menemukan tenangmu. I hope tomorrow feels a little kinder to you.</p></div></details>
+              <details class="open-card"><summary><span class="open-number">02</span><span class="open-title">Open When You Feel Tired</span><span class="open-plus" aria-hidden="true">+</span></summary><div class="open-note"><p>Kalau kamu lelah, istirahatlah ya. Tidak semua hal harus selesai hari ini. Kamu boleh menunda sesuatu, mengambil jeda, dan mengisi tenaga lagi. Jangan terlalu keras kepada diri sendiri. Kamu sudah berusaha sejauh ini, dan itu juga layak dihargai.</p></div></details>
+              <details class="open-card"><summary><span class="open-number">03</span><span class="open-title">Open When You Miss Me</span><span class="open-plus" aria-hidden="true">+</span></summary><div class="open-note"><p>Kalau kamu sedang merindukanku, semoga pesan ini bisa menjadi pengingat kecil bahwa ada seseorang yang juga menyimpan banyak cerita tentangmu. Mungkin sekarang kita tidak sedang berada di tempat yang sama, tetapi kita masih bisa saling menyapa, bercerita, dan menjaga hubungan dengan baik. Sending you a little hug from here.</p></div></details>
+              <details class="open-card"><summary><span class="open-number">04</span><span class="open-title">Open When You Feel Insecure</span><span class="open-plus" aria-hidden="true">+</span></summary><div class="open-note"><p>Ika, jangan terlalu sering membandingkan dirimu dengan orang lain, ya. Setiap orang punya waktunya sendiri untuk tumbuh. Kamu tidak perlu menjadi seperti siapa pun agar pantas dihargai. Ada banyak hal baik dalam dirimu yang mungkin belum selalu kamu lihat. Please be gentle with yourself.</p></div></details>
+              <details class="open-card"><summary><span class="open-number">05</span><span class="open-title">Open When You Think You Are Not Enough</span><span class="open-plus" aria-hidden="true">+</span></summary><div class="open-note"><p>Kamu tidak harus selalu berhasil, selalu cantik, selalu ceria, atau selalu punya jawaban untuk semuanya. Nilaimu tidak berkurang hanya karena ada satu hal yang belum bisa kamu lakukan. Kamu tetap berharga, bahkan pada hari ketika kamu sendiri sulit mempercayainya.</p></div></details>
+              <details class="open-card"><summary><span class="open-number">06</span><span class="open-title">Open When You Need Motivation</span><span class="open-plus" aria-hidden="true">+</span></summary><div class="open-note"><p>Pelan-pelan saja, Ika. Tidak apa-apa kalau langkahmu hari ini kecil. Yang penting kamu tidak berhenti percaya bahwa masa depan masih punya banyak kemungkinan baik. Terus belajar, coba lagi, dan jangan takut memulai dari awal. Aku berharap suatu hari kamu bisa melihat betapa jauh kamu sudah melangkah.</p></div></details>
+              <details class="open-card"><summary><span class="open-number">07</span><span class="open-title">Open When You Can't Fall Asleep</span><span class="open-plus" aria-hidden="true">+</span></summary><div class="open-note"><p>Sudah malam, jadi jangan terlalu banyak memikirkan hal yang belum tentu bisa kamu selesaikan sekarang. Tarik napas pelan, lepaskan beban hari ini sedikit demi sedikit, lalu izinkan dirimu beristirahat. Semoga tidurmu nyaman dan besok kamu bangun dengan perasaan yang lebih ringan. Good night, little star.</p></div></details>
+              <details class="open-card"><summary><span class="open-number">08</span><span class="open-title">Open When You Forget How Special You Are</span><span class="open-plus" aria-hidden="true">+</span></summary><div class="open-note"><p>Coba ingat langit malam. Ada banyak bintang di sana, dan setiap bintang punya cahayanya sendiri. Kamu juga begitu, Ika. Kamu tidak harus menjadi yang paling terang untuk punya arti. Keberadaanmu sendiri sudah punya tempat yang tidak bisa digantikan oleh siapa pun.</p></div></details>
             </div>
-            <div class="constellation-foot"><span>DRAG NOTHING. JUST TAP A STAR.</span><span>✳ &nbsp; a tiny map of a very big feeling</span></div>
+            <a class="next-chapter" href="#words"><span>A FEW WORDS FOR YOU</span><span aria-hidden="true">↓</span></a>
           </div>
         </section>
 
-        <section class="letter-section section-wrap reveal" id="letter" aria-labelledby="letter-title">
-          <div class="section-index"><span>03</span><span class="index-line"></span><span>SEALED WITH LOVE</span></div>
-          <div class="letter-layout">
-            <div class="letter-copy">
-              <p class="eyebrow eyebrow--soft">WHEN WORDS NEED A LITTLE ROOM</p>
-              <h2 id="letter-title">Surat kecil,<br /><em>rasa yang besar.</em></h2>
-              <p class="section-deck">Ada beberapa hal yang ingin kusampaikan pelan-pelan. Buka saat kamu siap, Ika.</p>
-              <div class="letter-from"><span class="letter-avatar">z</span><span><strong>Untuk Artika LintangSari</strong><small>from someone who is grateful for you</small></span></div>
-            </div>
-            <div class="envelope-wrap">
-              <button class="envelope" id="envelope-button" type="button" aria-expanded="false" aria-controls="love-letter" aria-label="Buka surat dari Zaza untuk Ika">
-                <span class="envelope-back"></span><span class="envelope-paper"><span class="paper-top">A LETTER FOR IKA</span><span class="paper-script">dear you,</span><span class="paper-heart">♡</span></span><span class="envelope-front"></span><span class="envelope-flap"></span><span class="envelope-seal">z</span><span class="envelope-hint">tap to open</span>
-              </button>
-              <dialog class="letter-content" id="love-letter" aria-labelledby="letter-dialog-title">
-                <div class="letter-content-top"><span id="letter-dialog-title">PRIVATE LITTLE LETTER · FOR IKA</span><span>♡</span></div>
-                <div class="letter-body">
-                  <p class="letter-salutation">Ika sayang,</p>
-                  <p>Mungkin aku tidak selalu menemukan cara paling tepat untuk mengatakannya. Jadi, kali ini aku ingin menuliskannya pelan-pelan: kamu itu spesial, dan kehadiranmu berarti banyak buatku.</p>
-                  <p>Aku suka bahwa rasa sayang tidak selalu datang sebagai sesuatu yang besar dan dramatis. Kadang ia hadir sebagai harapan sederhana—semoga harimu baik, semoga kamu sempat beristirahat, semoga kamu ingat untuk bersikap lembut pada dirimu sendiri.</p>
-                  <p>Terima kasih sudah menjadi Ika, dengan segala hal yang membuatmu jadi dirimu. Aku bersyukur karena boleh mengenalmu dan menyayangimu. Kamu berharga, kamu pantas mendapat kasih yang lembut, dan aku ingin terus mengingatkanmu tentang itu.</p>
-                  <p>Kalau suatu malam terasa panjang, semoga semesta kecil ini bisa menemanimu sebentar. Di suatu tempat di bawah langit yang sama, ada Zaza yang selalu mengirimkan doa baik untukmu.</p>
-                  <p class="letter-signoff">Dengan sayang yang banyak,<br /><span>Zaza <i>♡</i></span></p>
-                </div>
-                <button class="letter-close" id="letter-close" type="button">Lipat kembali suratnya <span aria-hidden="true">↑</span></button>
-              </dialog>
-              <span class="envelope-spark envelope-spark--a" aria-hidden="true">✦</span><span class="envelope-spark envelope-spark--b" aria-hidden="true">✧</span>
-            </div>
+        <section class="chapter section-wrap reveal" id="words" aria-labelledby="words-title">
+          <div class="chapter-meta"><span>05</span><span class="meta-line"></span><span>TULIPS &amp; ROSES</span></div>
+          <div class="chapter-heading"><p class="eyebrow">A FEW WORDS FOR YOU</p><h2 id="words-title">A Few Words <em>for You</em></h2></div>
+          <div class="flower-notes">
+            <article class="flower-note flower-note--tulip"><span class="flower-note-label">A LITTLE TULIP FOR YOU</span><svg class="flower-note-mark flower-note-mark--tulip" viewBox="0 0 82 145" aria-hidden="true"><use href="#tulip"/></svg><p>Seperti tulip yang tumbuh dengan sederhana tetapi tetap indah, semoga kamu selalu punya ruang untuk berkembang dengan caramu sendiri. Tidak perlu terburu-buru menjadi apa pun. Nikmati prosesmu, jaga mimpimu, dan jangan lupa bahwa hal-hal baik juga membutuhkan waktu untuk tumbuh.</p></article>
+            <article class="flower-note flower-note--rose"><span class="flower-note-label">A ROSE WITH WARM WISHES</span><svg class="flower-note-mark flower-note-mark--rose" viewBox="0 0 92 135" aria-hidden="true"><use href="#rose"/></svg><p>Seperti mawar yang punya keindahan sekaligus duri, hidup juga tidak selalu berjalan mudah. Tapi semoga setiap pengalaman membuatmu semakin mengenal kekuatan dirimu. Tetap lembut tanpa membiarkan dirimu terluka terus-menerus. <em>You deserve kindness, too.</em></p></article>
           </div>
-          <div class="letter-footnote"><span class="footnote-rule"></span><span>take all the time you need</span><span>♡</span></div>
+          <a class="next-chapter" href="#stories"><span>LITTLE STORIES</span><span aria-hidden="true">↓</span></a>
         </section>
 
-        <section class="closing-section" aria-labelledby="closing-title">
-          <div class="closing-orbit closing-orbit--one" aria-hidden="true"></div><div class="closing-orbit closing-orbit--two" aria-hidden="true"></div>
-          <div class="closing-inner reveal">
-            <span class="closing-flower" aria-hidden="true">✿</span>
-            <p class="eyebrow">UNTIL THE NEXT LITTLE THING</p>
-            <h2 id="closing-title">Untuk semua malam<br />yang belum kita lalui, <em>bersama.</em></h2>
-            <p>Semoga selalu ada hal baik yang menemukanmu.<br />Dan semoga kamu tidak pernah lupa betapa disayanginya dirimu.</p>
-            <a class="button button-light" href="#home"><span>Kembali ke awal</span><span class="button-arrow" aria-hidden="true">↑</span></a>
-            <div class="closing-sign">made with all my heart <span>♡</span></div>
+        <section class="chapter stories-chapter" id="stories" aria-labelledby="stories-title">
+          <div class="section-wrap reveal">
+            <div class="chapter-meta"><span>06</span><span class="meta-line"></span><span>SMALL MOMENTS, KEPT CLOSE</span></div>
+            <div class="chapter-heading"><p class="eyebrow">LITTLE STORIES</p><h2 id="stories-title">Little <em>Stories</em></h2><p class="heading-note">Ada beberapa hal yang mungkin terlihat sederhana, tetapi tetap ingin kusimpan dalam bentuk cerita.</p></div>
+            <div class="story-list">
+              <article class="story-row"><span class="story-index">01</span><div><h3>The Beginning</h3><p>Aku tidak tahu kapan tepatnya semuanya mulai terasa berbeda. Yang aku ingat, awalnya kita hanya dua orang yang saling mengenal. Lalu percakapan demi percakapan membuatku semakin penasaran tentang kamu. Ternyata, sesuatu yang berarti tidak selalu dimulai dengan cara yang besar.</p></div></article>
+              <article class="story-row"><span class="story-index">02</span><div><h3>Getting Closer</h3><p>Semakin banyak cerita yang kita bagi, semakin banyak hal kecil tentangmu yang mulai kukenal. Ada obrolan yang membuat tertawa, ada cerita random, dan ada momen ketika aku sadar bahwa aku mulai menunggu kabar darimu. Semuanya tumbuh pelan-pelan, tanpa perlu dipaksakan.</p></div></article>
+              <article class="story-row"><span class="story-index">03</span><div><h3>The Little Things</h3><p>Kadang yang paling ingin diingat justru bukan hal besar. Bisa jadi sebuah kalimat sederhana, candaan kecil, atau cara kamu menceritakan sesuatu dengan antusias. Hal-hal seperti itu mungkin cepat berlalu, tetapi bisa tinggal cukup lama dalam ingatan.</p></div></article>
+              <article class="story-row"><span class="story-index">04</span><div><h3>Your Smile</h3><p>Ada momen ketika senyummu membuat suasana terasa lebih baik. Aku tidak tahu apakah kamu menyadarinya, tetapi ada sesuatu yang menenangkan dari melihatmu bahagia. Semoga kamu punya lebih banyak alasan untuk tersenyum, bukan hanya karena orang lain, tetapi juga karena dirimu sendiri.</p></div></article>
+              <article class="story-row"><span class="story-index">05</span><div><h3>Across the Distance</h3><p>Jarak kadang membuat kita tidak bisa hadir secara langsung. Ada waktu ketika kita hanya bisa bertukar pesan atau menunggu kesempatan untuk berbicara. Meski begitu, aku berharap jarak tidak membuat kita lupa untuk saling menghargai, menjaga komunikasi, dan tetap menjalani kehidupan masing-masing dengan baik.</p></div></article>
+              <article class="story-row"><span class="story-index">06</span><div><h3>More Stories Ahead</h3><p>Masih banyak hari yang belum kita ketahui ceritanya. Mungkin akan ada hari yang menyenangkan, hari yang melelahkan, atau hal-hal baru yang tidak pernah kita rencanakan. Apa pun yang terjadi, semoga kita bisa menyikapinya dengan dewasa, saling menghormati, dan tetap menjadi versi diri yang lebih baik.</p></div></article>
+            </div>
+            <a class="next-chapter" href="#stars"><span>SOMEWHERE BETWEEN THE STARS</span><span aria-hidden="true">↓</span></a>
+          </div>
+        </section>
+
+        <section class="stars-chapter" id="stars" aria-labelledby="stars-title">
+          <div class="starscape" aria-hidden="true"></div>
+          <div class="section-wrap stars-content reveal">
+            <div class="chapter-meta chapter-meta--light"><span>07</span><span class="meta-line"></span><span>A SKY THAT MAKES ME THINK OF YOU</span></div>
+            <p class="eyebrow">SOMEWHERE BETWEEN THE STARS</p>
+            <h2 id="stars-title">Somewhere Between<br /><em>the Stars</em></h2>
+            <div class="galaxy-vignette" aria-hidden="true"><span class="galaxy-moon"></span><span class="galaxy-cloud galaxy-cloud--one"></span><span class="galaxy-cloud galaxy-cloud--two"></span><span class="galaxy-orbit galaxy-orbit--one"></span><span class="galaxy-orbit galaxy-orbit--two"></span><svg class="galaxy-kitty" viewBox="0 0 150 150"><use href="#cat-sit"/></svg></div>
+            <p class="stars-intro">For the girl who finds beauty in the moon, the sky, and everything beyond it.</p>
+            <button class="starlight-button" id="starlight-button" type="button" aria-label="Nyalakan bintang kecil" aria-pressed="false"><span aria-hidden="true">✦</span><span class="starlight-burst" aria-hidden="true"></span></button>
+            <div class="sky-notes">
+              <article class="sky-note"><span>THE MOON — MY FAVORITE MOON</span><p>Kalau bulan saja bisa tetap terlihat indah meskipun tidak selalu penuh, semoga kamu juga ingat bahwa kamu tetap berharga bahkan ketika sedang tidak baik-baik saja. Kamu tidak harus selalu terlihat sempurna untuk tetap menjadi seseorang yang istimewa.</p></article>
+              <article class="sky-note"><span>THE SKY — A SKY FULL OF WISHES</span><p>Kalau suatu hari kamu melihat langit yang luas, ingatlah bahwa mimpimu juga punya ruang seluas itu. Jangan takut punya harapan yang besar. Kamu boleh tumbuh sejauh yang kamu inginkan, satu langkah kecil demi satu langkah kecil.</p></article>
+              <article class="sky-note"><span>THE CLOUDS — SOFT LIKE YOU</span><p>Awan selalu berubah bentuk, bergerak mengikuti angin, dan tidak harus menetap di satu tempat. Semoga kamu juga tidak takut berubah dan bertumbuh. Kamu berhak menemukan tempat yang membuatmu merasa nyaman, tanpa harus kehilangan dirimu sendiri.</p></article>
+              <article class="sky-note"><span>THE STARS — YOU ARE MY LITTLE STAR</span><p>Di antara banyaknya bintang, setiap cahaya punya tempatnya sendiri. Begitu juga kamu, Ika. Kamu tidak perlu menjadi seperti orang lain untuk bersinar. Bahkan saat cahayamu terasa redup, itu tidak berarti kamu kehilangan keindahanmu.</p></article>
+              <article class="sky-note"><span>THE MILKY WAY — A UNIVERSE WITHIN YOU</span><p>Galaksi begitu luas dan menyimpan begitu banyak hal yang belum kita ketahui. Sama seperti dirimu, semakin aku mengenalmu, semakin banyak hal menarik yang ingin aku pahami. Kamu punya cerita, pikiran, mimpi, dan sisi-sisi yang membuatmu menjadi dirimu sendiri.</p></article>
+            </div>
+            <aside class="sky-thought"><span>A LITTLE THOUGHT</span><p>If I could give you one thing, I would give you the ability to see yourself through my eyes. Maybe then, you would understand how beautiful your existence really is.</p></aside>
+            <p class="stars-closing">Dari sekian banyak hal indah yang bisa ditemukan ketika memandang langit, aku tetap bersyukur karena pernah menemukan kamu di antara luasnya dunia ini.</p>
+            <a class="next-chapter next-chapter--light" href="#remember"><span>PLEASE REMEMBER</span><span aria-hidden="true">↓</span></a>
+          </div>
+        </section>
+
+        <section class="chapter remember-chapter section-wrap reveal" id="remember" aria-labelledby="remember-title">
+          <div class="chapter-meta"><span>08</span><span class="meta-line"></span><span>A SMALL REMINDER, WHENEVER YOU NEED IT</span></div>
+          <div class="chapter-heading"><p class="eyebrow">PLEASE REMEMBER</p><h2 id="remember-title">Ten little things<br /><em>to keep close.</em></h2><p class="heading-note">Sepuluh pesan kecil yang bisa ditampilkan satu per satu.</p></div>
+          <div class="reminder-reader" aria-live="polite" aria-atomic="true">
+            <span class="reminder-counter"><span id="reminder-current">01</span> <i>/</i> 10</span>
+            <p class="reminder-message" id="reminder-message">Jangan lupa makan, bahkan ketika sedang sibuk.</p>
+            <div class="reminder-controls"><button class="reader-button" id="reminder-prev" type="button" aria-label="Pesan sebelumnya" disabled>← <span>SEBELUMNYA</span></button><span class="reader-dots" id="reader-dots" aria-hidden="true"></span><button class="reader-button" id="reminder-next" type="button" aria-label="Pesan berikutnya"><span>BERIKUTNYA</span> →</button></div>
+          </div>
+          <noscript><ol class="reminder-fallback"><li>Jangan lupa makan, bahkan ketika sedang sibuk.</li><li>Kalau lelah, istirahatlah. Kamu tidak harus memaksakan semuanya.</li><li>Jangan mengukur nilai dirimu dari pendapat semua orang.</li><li>Kamu boleh berkata tidak pada hal yang membuatmu tidak nyaman.</li><li>Jangan takut meminta bantuan ketika memang membutuhkannya.</li><li>Tetap jaga kesehatan, tidur yang cukup, dan beri waktu untuk dirimu sendiri.</li><li>Jangan membandingkan prosesmu dengan perjalanan orang lain.</li><li>Kamu boleh berubah pikiran dan belajar dari kesalahan.</li><li>Tetap punya waktu untuk hal-hal yang kamu sukai.</li><li>Apa pun yang sedang kamu hadapi, jangan lupa bahwa kamu juga pantas diperlakukan dengan baik.</li></ol></noscript>
+          <a class="next-chapter" href="#wishes"><span>WISHES FOR YOU</span><span aria-hidden="true">↓</span></a>
+        </section>
+
+        <section class="chapter wishes-chapter" id="wishes" aria-labelledby="wishes-title">
+          <div class="section-wrap reveal">
+            <div class="chapter-meta"><span>09</span><span class="meta-line"></span><span>THINGS I HOPE LIFE BRINGS YOU</span></div>
+            <div class="chapter-heading"><p class="eyebrow">WISHES FOR YOU</p><h2 id="wishes-title">A few wishes,<br /><em>from my heart.</em></h2></div>
+            <div class="wishes-list">
+              <p>Aku berharap kamu selalu punya alasan untuk tersenyum, bahkan dari hal-hal kecil yang sering terlewatkan.</p>
+              <p>Aku berharap setiap mimpi yang sedang kamu usahakan perlahan menemukan jalannya.</p>
+              <p>Aku berharap kamu dikelilingi orang-orang yang tulus, yang menghargai dirimu tanpa membuatmu harus berpura-pura menjadi orang lain.</p>
+              <p>Aku berharap kamu punya keberanian untuk mencoba hal baru, dan tidak terlalu takut ketika sesuatu tidak berjalan sesuai rencana.</p>
+              <p>Aku berharap kesehatanmu selalu terjaga, pikiranmu diberi ketenangan, dan hatimu punya cukup ruang untuk beristirahat.</p>
+              <p>Aku berharap kamu semakin percaya pada kemampuanmu sendiri dan tidak mudah meremehkan pencapaian kecilmu.</p>
+              <p>Aku berharap masa depan membawamu ke tempat-tempat baik yang selama ini kamu impikan.</p>
+              <p>Dan yang paling sederhana, aku berharap kamu bahagia—bukan hanya pada hari-hari istimewa, tetapi juga dalam hari biasa yang berjalan dengan tenang.</p>
+            </div>
+            <a class="next-chapter" href="#promises"><span>MY PROMISES</span><span aria-hidden="true">↓</span></a>
+          </div>
+        </section>
+
+        <section class="chapter promises-chapter" id="promises" aria-labelledby="promises-title">
+          <div class="section-wrap reveal">
+            <div class="chapter-meta"><span>10</span><span class="meta-line"></span><span>THINGS I WILL KEEP LEARNING</span></div>
+            <div class="chapter-heading"><p class="eyebrow">MY PROMISES</p><h2 id="promises-title">Promises I want<br /><em>to keep.</em></h2></div>
+            <div class="promises-list">
+              <p>Aku akan berusaha mendengarkan ketika kamu ingin bercerita, bukan hanya menunggu giliran untuk berbicara.</p>
+              <p>Aku akan belajar memahami perasaanmu tanpa menganggap bahwa aku selalu benar.</p>
+              <p>Aku akan menghargai ruang pribadi, waktu, dan hal-hal yang penting dalam hidupmu.</p>
+              <p>Aku akan mendukungmu untuk terus belajar, berkembang, dan mengejar masa depanmu sendiri.</p>
+              <p>Aku akan berusaha menyampaikan sesuatu dengan jujur dan baik, terutama ketika ada hal yang perlu dibicarakan.</p>
+              <p class="promise-final">Aku tidak bisa menjanjikan bahwa semuanya akan selalu mudah. Tapi aku bisa berusaha untuk bersikap lebih dewasa, menghargai kamu, dan terus belajar menjadi pribadi yang lebih baik.</p>
+            </div>
+            <a class="next-chapter" href="#cats"><span>A LITTLE NOTE FROM THE CATS</span><span aria-hidden="true">↓</span></a>
+          </div>
+        </section>
+
+        <section class="chapter cats-chapter section-wrap reveal" id="cats" aria-labelledby="cats-title">
+          <div class="chapter-meta"><span>11</span><span class="meta-line"></span><span>A TINY PAUSE FOR A SOFTER DAY</span></div>
+          <div class="chapter-heading"><p class="eyebrow">LITTLE CAT MESSAGES</p><h2 id="cats-title">A Little Note<br /><em>from the Cats</em></h2><p class="heading-note">Pesan kecil untuk dibaca kapan saja. Meow.</p></div>
+          <div class="cat-parade"><svg class="parade-cat parade-cat--sleep" viewBox="0 0 170 105" aria-hidden="true"><use href="#cat-sleep"/></svg><button class="cat-play-button" id="cat-play-button" type="button" aria-label="Ajak kucing kecil bermain"><svg viewBox="0 0 155 130" aria-hidden="true"><use href="#cat-play"/></svg><span class="parade-yarn" aria-hidden="true"></span></button><span class="parade-star" aria-hidden="true">✦</span><span class="cat-reaction" id="cat-reaction" aria-live="polite"></span><svg class="parade-flower" viewBox="0 0 82 145" aria-hidden="true"><use href="#tulip"/></svg></div>
+          <div class="cat-notes">
+            <button class="cat-bubble" type="button" aria-pressed="false">Meow, Ika! Jangan lupa senyum hari ini.</button>
+            <button class="cat-bubble" type="button" aria-pressed="false">Kalau hari ini melelahkan, waktunya istirahat seperti kucing yang menemukan tempat paling nyaman.</button>
+            <button class="cat-bubble" type="button" aria-pressed="false">Kamu sudah berusaha. Sekarang, jangan lupa beri dirimu sedikit waktu.</button>
+            <button class="cat-bubble" type="button" aria-pressed="false">Sending you a tiny meow and a warm hug.</button>
+            <button class="cat-bubble" type="button" aria-pressed="false">Semoga hari ini ada hal kecil yang membuatmu bahagia.</button>
+            <button class="cat-bubble" type="button" aria-pressed="false">Jangan lupa makan, ya. Bahkan kucing pun tahu kapan waktunya mencari makanan.</button>
+            <button class="cat-bubble" type="button" aria-pressed="false">Kamu tidak harus produktif setiap saat. Rebahan sebentar juga boleh.</button>
+            <button class="cat-bubble" type="button" aria-pressed="false">If today feels cloudy, I hope tomorrow brings a little sunshine.</button>
+            <button class="cat-bubble" type="button" aria-pressed="false">Kamu berharga, bahkan ketika sedang tidak punya energi untuk melakukan banyak hal.</button>
+            <button class="cat-bubble" type="button" aria-pressed="false">One soft meow for my favorite girl. ♡</button>
+          </div>
+          <a class="next-chapter" href="#final-letter"><span>UNTIL THE NEXT PAGE</span><span aria-hidden="true">↓</span></a>
+        </section>
+
+        <section class="final-chapter" id="final-letter" aria-labelledby="final-title">
+          <div class="section-wrap reveal">
+            <div class="chapter-meta chapter-meta--light"><span>12</span><span class="meta-line"></span><span>THE LAST PAGE, FOR NOW</span></div>
+            <div class="final-heading"><p class="eyebrow">FINAL LETTER</p><h2 id="final-title">Until the <em>Next Page</em></h2></div>
+            <div class="final-book" role="group" aria-label="Halaman buku terakhir dari Zaza untuk Ika">
+              <div class="final-book-mark" aria-hidden="true"><span>THE LAST PAGE</span><span class="book-star">✦</span><span>FOR IKA · ZAZA</span></div>
+              <article class="final-letter">
+              <p class="letter-salutation">Ika,</p>
+              <p>Sampai di bagian ini, mungkin kamu sudah membaca banyak kata yang kususun untukmu. Aku tidak tahu bagian mana yang paling kamu suka, tetapi aku berharap setidaknya ada satu kalimat yang membuatmu tersenyum atau merasa sedikit lebih dihargai.</p>
+              <p>Aku membuat semua ini bukan karena aku selalu punya kata-kata yang sempurna. Justru karena ada banyak hal yang kadang sulit kusampaikan secara langsung. Jadi, aku mencoba menyimpannya di sini, supaya suatu hari kamu bisa kembali membacanya.</p>
+              <p>Terima kasih sudah menjadi dirimu sendiri. Terima kasih untuk cerita, tawa, waktu, dan hal-hal kecil yang pernah kita bagi. Aku menghargai setiap bagian dari perjalanan yang membuat kita saling mengenal.</p>
+              <p>Teruslah menjadi Ika yang punya mimpi, punya rasa ingin tahu, dan punya keberanian untuk menjalani hidup. Jangan lupakan hal-hal yang kamu sukai. Tetap lihat langit, nikmati bulan, perhatikan bintang-bintang, dan biarkan dirimu terus menemukan hal-hal baru yang membuatmu bahagia.</p>
+              <p>Kalau suatu hari kamu merasa dunia terlalu ramai, semoga kamu ingat bahwa kamu boleh berhenti sebentar. Kamu boleh beristirahat, menyusun ulang langkah, lalu melanjutkan perjalanan ketika sudah siap.</p>
+              <p>Aku tidak tahu bagaimana halaman-halaman berikutnya akan berjalan. Tapi aku berharap kamu selalu menemukan alasan untuk menyayangi hidupmu sendiri dan bangga pada dirimu yang terus bertumbuh.</p>
+              <p class="letter-english">And wherever life takes you, I hope you never forget this little universe was made with a lot of affection, just for you.</p>
+              <p class="letter-signoff">With love,<br /><span>Zaza <i>♡</i></span></p>
+              </article>
+            </div>
+            <div class="final-afterword"><span class="afterword-line" aria-hidden="true"></span><svg class="final-kitty" viewBox="0 0 150 150" aria-hidden="true"><use href="#cat-sit"/></svg><p class="eyebrow">And this is not the end of your story.</p><p>There are still so many beautiful things waiting for you, Ika.</p><strong>With love, Zaza <i>♡</i></strong></div>
+            <a class="back-to-top" href="#home"><span aria-hidden="true">↑</span><span>KEMBALI KE AWAL</span></a>
           </div>
         </section>
       </main>
-
-      <footer class="site-footer"><a href="#home" class="footer-mark">z<span>♡</span>i</a><span>© under the same moon</span><span>made for Ika, by Zaza <span class="footer-heart">♡</span></span></footer>
+      <footer class="site-footer"><a href="#home">Ika's Little Universe</a><span>made with affection by Zaza <i>♡</i></span></footer>
     </div>
   </body>
 </html>

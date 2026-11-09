@@ -1,23 +1,21 @@
-# A Little Universe for Ika
+# Ika's Little Universe
 
-A small, static love-letter website from Zaza to Artika LintangSari (Ika).
+A romantic, animated reading world made with love by Zaza for Artika LintangSari (Ika).
 
-## What's inside
+## Files
 
-- `index.html` — the page structure and original inline illustrations
-- `styles.css` — the midnight-blue garden design and responsive layouts
-- `script.js` — real asset-aware loading, constellation notes, reveal motion, and the letter interaction
+- `index.html` — all 13 parts and the complete supplied Indonesian and English copy; original cat and flower SVG symbols are embedded in the page
+- `styles.css` — responsive midnight-blue dream garden, clouds, moonlight, Milky Way effects, and reduced-motion handling
+- `script.js` — cinematic opening sequence, welcome transition, local English-to-Indonesian translation toggle, interactive cats, one-at-a-time Open When cards, reminder reader, and section navigation
 
-There is no database, backend, framework, external font, or remote image. The page works as a set of static files. The loader advances on browser milestones (document load, fonts, and images), not on an arbitrary delay.
+The main letter is tucked into one navy envelope. The final letter uses a separate open-book page, so the two reading moments have distinct designs and the original letter copy remains intact. Each chapter has its own visual treatment, from scrapbook-like appreciation cards and a botanical section to a vertical story timeline, a moonlit reminder reader, and a star map.
 
-## Make it more personal
+The project uses HTML, CSS, and Vanilla JavaScript. It has no framework, external image, video, audio, database, backend, or remote assets. The translation button works offline from a built-in phrase dictionary and can be switched back to the original English copy. The illustrations are original inline SVGs and the night sky, clouds, light, and particles are animated with CSS. The five-second opening waits for the page's local assets before it finishes.
 
-Edit the Indonesian copy in `index.html` to add a shared memory, a nickname, or a line only the two of you use. If you add photos, place the image files beside `index.html`, reference them with relative paths, and write useful `alt` text. The page stays static; no information is sent to a server by this project.
+## Run locally
 
-To change the color palette, edit the custom properties at the top of `styles.css`.
+Open `index.html` in a modern browser. The page also works on any static host.
 
 ## Deploy on Vercel
 
-The ZIP is arranged with `index.html` at its root. Open [Vercel Drop](https://vercel.com/drop), then select or drop `A-Little-Universe-for-Ika.zip` and deploy it as a static site. Vercel's current Drop workflow accepts `.zip` files, folders, and individual files.
-
-For a local preview, open `index.html` in a modern browser.
+The ZIP has `index.html` at its root. Open [Vercel Drop](https://vercel.com/drop), then select or drop `A-Little-Universe-for-Ika.zip` and deploy as a static site. Vercel's Drop workflow accepts ZIP files, folders, and individual files.
